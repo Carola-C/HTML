@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejercicio5</title>
+    </head>
+    <body>
+        <form>
+            <section>
+                <p>Datalist</p>
+                <fieldset>
+                    <label>Lista de colores</label>
+                    <input list="listaColores" name="inputLista">
+                    <datalist id="listaColores">
+                        <option value="Azul">
+                        <option value="Rojo">
+                        <option value="Amarillo">
+                        <option value="Negro">
+                        <option value="Blanco">
+                    </datalist>
+                </fieldset>
+            </section>
+            <section>
+                <p>Url input</p>
+                <fieldset>
+                    <label for="url">Lista urls</label>
+                    <input type="url" name="url" id="url"
+                    placeholder="https://example.com"
+                    pattern="https://.*" size="30"
+                    list="listaurls"
+                    required>
+                    <datalist id="listaurls">
+                        <option value="https://www.google.com" label="by google">
+                        <option value="https://www.msn.com" label="by msn">
+                    </datalist>
+                </fieldset>
+            </section>
+            <section>
+                <p>Rangos</p>
+                <fieldset>
+                    <input type="range" list="listanums" step="1" name="range" max="6" min="0">
+                    <datalist id="listanums">
+                        <option value="0" label="cero">
+                        <option value="1" label="uno">
+                        <option value="2" label="dos">
+                        <option value="3" label="tres">
+                        <option value="4" label="cuatro">
+                        <option value="5" label="cinco">
+                        <option value="6" label="seis">
+                    </datalist>
+                </fieldset>
+            </section>
+            <section>
+                <p>Output</p>
+                <fieldset>
+                    <input type="number" name="a" id="a" value="20">+
+                    <input type="number" name="b" id="b" value="30">=
+                    <output name="resultado" for="a b">50</output>
+                </fieldset>
+            </section>
+            <section>
+                <p>Number</p>
+                <fieldset>
+                    <label for="numero">Number</label>
+                    <input type="number" placeholder="Ingresa un número" name="numero" id="numero">
+                </fieldset>
+            </section>
+            <section>
+                <p>Tel</p>
+                <fieldset>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" placeholder="Ingresa un número telefónico" name="telefono" id="telefono">
+                </fieldset>
+            </section>
+            <section>
+                <p>Email</p>
+                <fieldset>
+                    <label for="correo">Email</label>
+                    <input type="email" placeholder="Ingresa un email" name="correo" id="correo">
+                </fieldset>
+            </section>
+            <section>
+                <p>Password</p>
+                <fieldset>
+                    <label for="contrasenia">Contraseña</label>
+                    <input type="password" placeholder="Ingresa una contraseña" name="contrasenia" id="contrasenia">
+                </fieldset>
+            </section>
+            <section>
+                <p>Text</p>
+                <fieldset>
+                    <label for="texto">Texto</label>
+                    <input type="text" placeholder="Ingresa un texto" name="texto" id="texto">
+                </fieldset>
+            </section>
+            <section>
+                <p>Field</p>
+                <fieldset>
+                    <label for="archivo">Archivo</label>
+                    <input type="file" name="archivo" id="archivo">
+                </fieldset>
+            </section>
+            <section>
+                <p>TextArea</p>
+                <fieldset>
+                    <label for="textArea">Area</label>
+                    <textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
+                </fieldset>
+            </section>
+            <section>
+                <p>CheckBox</p>
+                <fieldset>
+                    <label for="checkBox">CheckBox1</label>
+                    <input type="checkbox" name="checkBox1" id="checkBox1">
+                    <label for="checkBox">CheckBox2</label>
+                    <input type="checkbox" name="checkBox1" id="checkBox2">
+                    <label for="checkBox">CheckBox3</label>
+                    <input type="checkbox" name="checkBox1" id="checkBox3">
+                </fieldset>
+            </section>
+            <section>
+                <p>Radio</p>
+                <fieldset>
+                    <label for="radio">Radio1</label>
+                    <input type="radio" name="gRadio" id="radio1">
+                    <label for="radio">Radio2</label>
+                    <input type="radio" name="gRadio" id="radio2">
+                    <label for="radio">Radio3</label>
+                    <input type="radio" name="gRadio" id="radio3">
+                </fieldset>
+            </section>
+            <section>
+                <p>Color</p>
+                <fieldset>
+                    <label for="colores">Colores</label>
+                    <input type="color" name="colores" id="color1">
+                </fieldset>
+            </section>
+            <section>
+                <p>Date</p>
+                <fieldset>
+                    <label for="date">Selecciona la fecha</label>
+                    <input type="date" name="date" id="date">
+                </fieldset>
+            </section>
+            <section>
+                <p>DateTiem Local</p>
+                <fieldset>
+                    <label for="date-local">Selecciona la fecha</label>
+                    <input type="datetime-local" name="date-local" id="date-local">
+                </fieldset>
+            </section>
+            <section>
+                <p>Month</p>
+                <fieldset>
+                    <label for="mes">Selecciona el mes</label>
+                    <input type="month" name="mes" id="mes">
+                </fieldset>
+            </section>
+            <section>
+                <p>Time</p>
+                <fieldset>
+                    <label for="tiempo">Time</label>
+                    <input type="time" name="tiempo" id="tiempo">
+                </fieldset>
+            </section>
+            <section>
+                <p>Week</p>
+                <fieldset>
+                    <label for="semana">Semana</label>
+                    <input type="week" name="semana" id="semana">
+                </fieldset>
+            </section>
+        </form>
+    </body>
+</html>
