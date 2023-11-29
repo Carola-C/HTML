@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejercicio8</title>
+    </head>
+    <body>
+        <header>
+            <h1>Ejercicio 08</h1>
+        </header>
+        <form>
+            <section>
+                <fieldset style="width: 50%;">
+                    <legend>Datos personal</legend>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre">
+                    <br><br>
+                    <label for="Edad">Edad: </label>
+                    <input type="number" name="edad" id="edad">
+                </fieldset>
+            </section>
+            <section>
+                <fieldset style="width: 50%;">
+                    <legend>Cultura general</legend>
+                    <label for="capital">Capital de Noruega</label>
+                    <input type="radio" name="capital" id="Cope">
+                    <label for="Cope">Copenhague</label>
+                    <input type="radio" name="capital" id="Hels">
+                    <label for="Hels">Helsinki</label>
+                    <input type="radio" name="capital" id="Oslo">
+                    <label for="Oslo">Oslo</label>
+                    <br><br>
+                    <label for="fecha">Fecha de la revolución francesa: </label>
+                    <input type="radio" name="fecha" id="14">
+                    <label for="14">1492</label>
+                    <input type="radio" name="fecha" id="17">
+                    <label for="fecha">1789</label>
+                    <input type="radio" name="fecha" id="19">
+                    <label for="fecha">1917</label>
+                </fieldset>
+            </section>
+            <br><br>
+            <section>
+                <button type="submit">Envíar</button>
+                <button type="reset">Borrar</button>
+            </section>
+        </form>
+        <section>
+            <h1><p>HTML5 number input</p></h1>
+        </section>
+        <section>
+            <h3>Ejemplo 1</h3>
+            <form>
+                <label for="edadD1">Introduce tu edad</label>
+                <input type="number">
+                <button type="submit">Envíar</button>
+            </form>
+        </section>
+        <section>
+            <h3>Ejemplo 2</h3>
+            <form>
+                <label for="edadD2">Introduce tu edad(min=18 max=99), campo obligatorio</label>
+                <input type="number" min="18" max="99" required>
+                <button type="submit">Envíar</button>
+            </form>
+        </section>
+        <section>
+            <h3>Ejemplo 3</h3>
+            <form>
+                <label for="edadD3">Introduce tu edad(min=18 max=99), campo obligatorio</label>
+                <input type="number" required min="18" max="99">
+                <button type="submit">Envíar</button>
+            </form>
+        </section>
+        <section>
+            <p onclick="this.style.color='red'">Este párrafo...</p>
+            <p ondblclick="this.style.color='red'">Este párrafo...</p>
+            <p onmouseup="this.style.color='red'">Este párrafo...</p>
+            <p onmousedown="this.style.color='red'">Este párrafo...</p>
+            <p onmousemove="this.style.color='red'">Este párrafo...</p>
+            <p onmouseover="this.style.color='red'">Este párrafo...</p>
+            <p onmouseout="this.style.color='red'">Este párrafo...</p>
+        </section>
+    </body>
+</html>
