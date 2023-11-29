@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio9</title>
+        
+    </head>
+    
+    <body>
+        <header>
+            <h3>
+                <p>Información sobre el producto</p>
+            </h3>
+        </header>
+        <section style="width: 500px;">
+            <fieldset>
+                <legend>Datos básicos</legend>
+                <label for="nombre">Nombre</label>
+                <br>
+                <input type="text" name="nombre" id="nombre">
+                <br><br>
+                <label for="descripcion">Descripción</label>
+                <br>
+                <textarea name="descripcion" id="desc" cols="30" rows="10"></textarea>
+                <br><br>
+                <label for="foto">Foto</label>
+                <input type="file" name="foto" id="foto">
+                <br><br>
+                <input type="checkbox" name="agregar" id="agregar">
+                <label for="agregar">Añadir contador de visitas</label>
+            </fieldset>
+            <fieldset>
+                <legend>Datos económicos</legend>
+                <label for="precio">Precio </label>
+                <input type="number" name="precio" id="precio" width="2px">
+                <label >&#128</label>
+                <label for="impuestos">Impuestos</label>
+                <input type="number" name="impuestos" id="impuestos" width="2px">
+                <label >%</label>
+                <br><br>
+                <label for="promo">Promoción</label>
+                <br>
+                <input type="radio" name="promo" id="n">
+                <label for="n">Ninguno</label>
+                <br>
+                <input type="radio" name="promo" id="tg">
+                <label for="tg">Transporte gratuito</label>
+                <br>
+                <input type="radio" name="promo" id="d">
+                <label for="d">Descuento 5%</label>
+            </fieldset>
+        </section>
+        <section style="width: 50%;">
+            <h4 style="text-align: center;">
+                Análisis de ventas anuales
+            </h4>
+            <table id="tabla1" data-numAnio="4" 
+            data-numProdMos="4" 
+            data-nomPro="Producto A,B,C y D" 
+            data-titTab="Análisis de ventas anuales">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Año</th>
+                        <th  colspan="4"> Expansión de ventas</th>
+                    </tr>
+                    <tr>
+                        <th>Producto A</th>
+                        <th>Producto B</th>
+                        <th>Producto C</th>
+                        <th>Producto D</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>N-3</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th>N-2</th>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <th>N-1</th>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th>N</th>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th rowspan="2">Año</th>
+                        <th>Producto A</th>
+                        <th>Producto B</th>
+                        <th>Producto C</th>
+                        <th>Producto D</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4"> Expansión de ventas</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </body>
+    
+    <script type="text/javascript">
+        let tabla = document.getElementById('tabla1');
+        let anio = tabla.getAttribute('data-numAnio');
+        let numProduct = tabla.getAttribute('data-numProdMos');
+        let nombreProd = tabla.getAttribute('data-nomPro');
+        let titulotab = tabla.getAttribute('data-titTab');
+        console.log(`Años :${anio}`);
+        console.log(`Número de productos :${numProduct}`);
+        console.log(`Nombre productos :${nombreProd}`);
+        console.log(`Título de la tabla :${titulotab}`);
+    </script>
+    <style type="text/css">
+        table, thead, tbody, tfoot, th, td{
+            border: 1px, solid, black;
+            border-collapse: collapse;
+        }
+        th,td{
+            text-align: center;
+            padding: 1px;
+        }
+    </style>
+</html>
